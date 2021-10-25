@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;900&display=swap');
+:root{
+	--main-color:#216bbc;
+	--secondary-color:#6f9a37;
+	--black:#192a56;
+	--grey-shade:#f2f6fb;
+	--light-color:#666;
+	--white:#fff;
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Heebo', sans-serif;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	transition: all .2s linear;
+	box-sizing: border-box;
+}
+h2{
+	font-size: 36px;
+	color: var(--main-color);
+}
+header{
+	background: var(--main-color);
+	background-image: url("../Images/3.png");
+	background-repeat: repeat;
+    background-position: center;
+}
+.row{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.top{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	color: var(--white);
+	font-size: 28px;
+	font-weight: 700;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--white);
+	margin-right: 20px;
+	justify-content: center;
+	align-items: center;
+}
+nav ul li a:hover{
+	background: var(--white)
+	color: var(--main-color);
+}
+nav {
+    margin: auto;
+    margin-right: 0;
+}
+.hero{
+	padding-top: 150px;
+	padding-bottom: 250px;
+	color: var(--white);
+	margin-right: 30%;
+}
+.hero h1{
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.3;
+	margin-bottom: 30px;
+}
+.hero h1 span{
+	font-weight: 600;
+}
+.button2 {
+    background: var(--white);
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 13px 30px;
+    border-radius: 50px;
+}
+.button2:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+.button1 {
+    background: var(--main-color);
+    color: var(--white);
+    font-weight: 500;
+    padding: 13px 30px;
+    border-radius: 50px;
+}
+.button1:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+.pod .card {
+    padding: 40px;
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.pod .card h2{
+	font-size: 20px;
+	color: var(--black);
+}
+.pod .card p{
+	margin-bottom: 30px;
+}
+.pod .card i{
+	font-size: 50px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+.pod{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 50px;
+	width: 90%;
+	margin: auto;
+	margin-top: -100px;
+}
+.card-row{
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+.card-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 50px;
+	padding-bottom: 100px;
+}
+.card-wrapper h2{
+	font-size: 20px;
+	color: var(--black);
+}
+.card-wrapper .card {
+    padding: 40px;
+    background: var(--grey-shade);
+}
+.toggle{
+	margin-bottom: 30px;
+}
+.card-folder{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 20px;
+	padding-bottom: 100px;
+}
+.card-folder h2{
+	font-size: 18px;
+	font-weight: 400;
+}
+.card-folder .card {
+    cursor: pointer;
+}
+.caller{
+	background: var(--main-color);
+	color: var(--white);
+	padding: 10px;
+}
+.caller h2{
+	color: var(--white);
+}
+.slide{
+	padding: 5px;
+	display: none;
+	margin-top: 20px;
+}
+.team{
+	margin-bottom: 30px;
+}
+.team-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 20px;
+	padding-bottom: 100px;
+}
+.team-wrapper h2{
+	font-size: 20px;
+	color: var(--black);
+}
+.team-wrapper .card img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.cta-wrapper{
+	background: var(--main-color);
+	color: var(--white);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.cta-wrapper h3{
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.cta-wrapper h3 span{
+	font-weight: 600;
+}
+.button3 {
+    background: transparent;
+    color: var(--white);
+    font-weight: 500;
+    padding: 13px 30px;
+    border:2px solid var(--white);
+    border-radius: 50px;
+}
+.button3:hover {
+    background: var(--white);
+    color: var(--main-color);
+}
+.cta-btn{
+	margin: auto;
+	margin-right: 0;
+}
+.client-section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.client-wrapper{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 30px;
+}
+.client-wrapper img{
+	width: 100%;
+}
+footer{
+	background: var(--main-color);
+	color: var(--white);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+footer a,footer h2{
+	color: var(--grey-shade);
+}
+footer a:hover,footer h2:hover{
+	color: var(--white);
+}
+.fav i {
+    float: left;
+    margin-right: 10px;
+}
+.fav{
+	width: 250px;
+}
+header .icons i,header .icons a{
+	color: var(--white);
+	cursor: pointer;
+	margin-left: .5rem;
+	text-align: center;
+	font-size: 2.2rem;
+}
+header .icons #menu-bars{
+	display: none;
+}
+.hero2{
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hero2 h1{
+	color: var(--white);
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.3;
+
+	margin-bottom: 30px;
+}
+.hero2 h1 span{
+	font-weight: 600;
+}
+
+
+
+/*Responsiveness code starts from here*/
+
+/*Media Query for tablet*/
+@media screen and (max-width: 991px){
+	.hero {
+    padding-top: 55px;
+    padding-bottom: 120px;
+    color: var(--white);
+	}
+	.pod {
+    grid-gap: 10px;
+    width: 97%;
+    margin-top: -55px;
+	}
+	.row {
+    padding-left: 30px;
+    padding-right: 30px;
+	}
+	.pod .card {
+    padding: 30px;
+	}
+	.card-row {
+    padding-top: 60px;
+	}
+	.card-wrapper {
+    grid-gap: 10px;
+    padding-bottom: 60px;
+	}
+	.card-wrapper .card {
+    padding: 30px;
+	}
+	.card-folder {
+    padding-bottom: 60px;
+	}
+	.team-wrapper {
+    padding-bottom: 60px;
+	}
+	.cta-wrapper {
+    flex-direction: column;
+	}
+	.cta-btn {
+    margin: 0;
+    margin-right: auto;
+    margin-top: 30px;
+	}
+	.cta-wrapper h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+	}
+	.client-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+	}
+
+}
+
+
+
+/*Media Query for small device like mobile*/
+@media screen and (max-width: 600px){
+	header .icons #menu-bars{
+	display: inline-block;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: var(--main-color);	
+		border-top: .1rem solid rgba(0,0,0,0.2);
+		border-bottom: .1rem solid rgba(0,0,0,0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
+	}
+	nav ul li {
+    display: block;
+	}
+	.row {
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+	.hero {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    margin-right: 0;
+	}
+	.pod {
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+	}
+	.pod .card {
+    padding: 30px;
+    padding-bottom: 45px;
+	}
+	.hero h1 {
+    font-size: 35px;
+	}
+
+	.hero2 h1{
+	font-size: 35px;
+	}
+	.card-row {
+    padding-top: 30px;
+	}
+	h2 {
+    font-size: 30px;
+	}
+	.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    padding-bottom: 30px;
+	}
+	.card-wrapper .card {
+    padding: 20px;
+	}
+	.card-folder {
+	grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    padding-bottom: 30px;
+	}
+	.team-wrapper {
+	grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    padding-bottom: 30px;
+	}
+	.cta-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+	}
+	.client-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+	}
+	.client-wrapper {
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 0;
+	}
+	footer {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+	}
+	.fav {
+    width: 100%;
+	}
+	.fav i {
+    float: none;
+    margin-right: 0;
+	}
+	header .navbar.active{
+	clip-path: polygon(0 0, 100% 0,100% 100%, 0% 100%);
+	top: 0;
+	width: 100%;
+    padding: 50px;
+    height: 100%;
+    text-align: center;
+	}
+	nav ul li a {
+    font-size: 25px;
+	}
+	.icons {
+    z-index: 20;
+	}
+	.hero2{
+	padding-top: 30px;
+    padding-bottom: 30px;
+	}
+}
+
+
+/*Media Query for mobile*/
+@media screen and (max-width: 450px){
+
+}
